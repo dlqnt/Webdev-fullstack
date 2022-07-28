@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAT310 Assignment 4</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="flexbox">
+        <h1 class="text-center">Contact List</h1>
+        <br />
+        <div class="form-inline">
+            Name: <input placeholder="Name" id="inputName" required /> Email: <input placeholder="Email Address" type="email" id="inputEmail" /> Phone: <input placeholder="Phone Number" id="inputPhone" />
+            <div id="submitButtons"><button type="button" onclick="addNewContact()">Submit</button></div>
+        </div>
+
+
+
+        <div id="contactlist">
+            <h3>Contacts</h3>
+            <input type="text" id="search" onkeyup="searchFun()" placeholder="Search for names..">
+
+            <table id="displayContacts" class="table"></table>
+        </div>
+
+        <script src="javascript.js"></script>
+    </div>
+</body>

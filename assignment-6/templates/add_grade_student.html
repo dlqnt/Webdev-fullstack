@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block content %}
+<div id="container">
+
+    <h1>Register new grades</h1>
+
+    <form action="/add_grade_student/{{student_no}}" method="POST">
+        <label for="course">Course</label>
+        <select name="course" id="course_id">
+            
+                {% for course in courses %}
+                
+                
+                <option value="{{ course.course_id }}">{{ course.course_id }}</option>
+                {% endfor %}
+                
+
+            
+        </select>
+        <br>
+        <label for="stud">Student</label>
+        <select name="stud" id="stud">
+            
+            
+             
+                
+                
+                <option value="{{ student_no }}">{{ student_no }}</option>
+            
+       
+                
+            
+
+            
+        </select>
+        <br>
+        <label for="grade">Grade</label>
+        <select name="grade" id="grade">
+            
+            
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            
+            
+        </select><br>
+        <label></label>
+        <input type="submit" value="Submit">
+
+        <input type="hidden" name="type" value="student">
+
+    </form>
+
+    <a href="/">main</a>
+
+
+</div>
+{% endblock %}

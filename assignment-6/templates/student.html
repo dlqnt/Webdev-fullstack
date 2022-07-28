@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block content %}
+<div id="container">
+    {% for student in students %} {% if student.student_no|string == student_no %}
+    <h1>Grades for {{ student.name }}</h1>
+    {% endif %} {% endfor %}
+
+
+    <table>
+        <thead>
+
+
+            <tr>
+                <td>Course</td>
+                <td>Course Name</td>
+                <td>Grade</td>
+            </tr>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for grade in grades %} {% if grade.student_no|string == student_no %}
+            <tr>
+                <td>{{ grade.course_id }}</td>
+                {% for course in courses %} {% if grade.course_id == course.course_id %}
+                <td>{{ course.name }}</td>
+                {% endif %} {% endfor %}
+                <td>{{ grade.grade }}</td>
+            </tr>
+            {% endif %} {% endfor %}
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+    <form action="/add_grade_student/{{student_no}}" method="GET">
+        <input type="text" name="student" value="{{ student_no }}" hidden>
+        <input type="submit" value="add grade">
+    </form>
+
+
+</div>
+{% endblock %}

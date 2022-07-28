@@ -1,0 +1,333 @@
+@import url("https://fonts.google.com/specimen/Montserrat");
+@import url("https://fonts.google.com/specimen/Raleway");
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+header {
+    height: 0px;
+    background-color: #236A62;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+header>h2 {
+    padding-top: 20px;
+}
+
+header>#logo {
+    background-color: #0D4F48;
+    height: 60px;
+    position: absolute;
+    left: 5%;
+    margin-top: 0;
+    z-index: 2;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #0D4F48;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 5%;
+    overflow: hidden;
+    background-color: #0D4F48;
+    margin-top: 0px;
+}
+
+#nav {
+    background-color: #6A9E98;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #0D4F48;
+}
+
+main {
+    padding-top: 100px;
+    width: 90%;
+    max-width: 1400px;
+    padding-left: 5%;
+}
+
+#banner {
+    width: 100%;
+    border-top: 5px solid #6A9E98;
+    border-bottom: 5px solid #6A9E98;
+}
+
+main>h1 {
+    background-color: #236A62;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+aside {
+    width: 300px;
+    background-color: #6A9E98;
+    position: absolute;
+    right: 15px;
+    color: white;
+    height: fit-content;
+}
+
+aside h2,
+table {
+    position: relative;
+    color: white;
+}
+
+aside>h2>a {
+    color: white;
+}
+
+aside>table>tbody>tr>td>a {
+    color: white;
+    text-decoration: white;
+}
+
+footer {
+    height: 120px;
+    border-top: 5px solid #0D4F48;
+    text-align: center;
+    position: sticky;
+    background-color: #6A9E98;
+    color: white;
+}
+
+footer>p {
+    padding-top: 40px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #236A62;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.framed {
+    display: inline-block;
+    height: 200px;
+    background-color: white;
+    border: 1px;
+    padding: 5px;
+    font-size: 0.8em;
+    color: black;
+    position: relative;
+    border-color: black;
+}
+
+.framed img {
+    max-width: 280px;
+    position: relative;
+}
+
+#discount {
+    background-color: #6A9E98;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    z-index: 2;
+    border-radius: 25px;
+    padding-top: 2px;
+}
+
+.price h3,
+p {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.price p {
+    text-align: right;
+    margin-top: 0px;
+}
+
+.price h3 {
+    margin: 0;
+}
+
+.container {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 300px;
+}
+
+.framed img {
+    max-width: 280px;
+}
+
+.framed img:hover {
+    border: solid 2px #6A9E98;
+    margin: -2px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+td {
+    padding: 10px 0;
+    /* 10px top & bottom padding, 0px left & right */
+    border-width: 3px 0;
+    /*  1px top & bottom border,  0px left & right */
+    border-color: #0D4F48;
+    border-style: solid;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+}
+
+.flexbox {
+    padding: 20px;
+    border: 1px solid #6A9E98;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+}
+
+#addbutton {
+    background-color: #6A9E98;
+    border-radius: 5px;
+}
+
+.productdetails {
+    padding-right: 250px;
+}
+
+.productdetails>h1 {
+    background-color: #6A9E98;
+    color: white;
+    padding-top: 1px;
+    padding-left: 5px;
+}
+
+.productdetails p {
+    padding: 5px;
+    margin-top: 2px;
+}
+
+#detailspar {
+    border: 1px solid #6A9E98;
+    font-size: 0.8em;
+}
+
+.cartsubhead>h1 {
+    text-align: left;
+    background-color: #6A9E98;
+    color: white;
+    padding-left: 3px;
+}
+
+#carttable {
+    color: black;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cancel {
+    background-color: #6A9E98;
+    border-radius: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+aside>h2 {
+    text-align: center;
+}
+
+.fuckyou {
+    padding-left: 15px;
+}
+
+#productform>label {
+    display: inline-block;
+    text-align: right;
+}
+
+#productform {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.button {
+    width: 110px;
+    text-align: right;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Delivery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.submitorder {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: space-between 50p;
+}
+
+@media only screen and (max-width: 600px) {
+    .details .Delivery {
+        flex-direction: column;
+    }
+}

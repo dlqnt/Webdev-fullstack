@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h2 id="logo">Mugs</h2>
+        <nav>
+            <ul id="nav">
+                <li>
+                    <a href="./index.html"><img src="home.svg" height="25px"></a>
+                </li>
+                <li>
+                    <a href="./product.html"><img src="align-justify.svg" height="25px"></a>
+                </li>
+                <li>
+                    <a href="./cart.html"><img src="shopping-cart.svg" height="25px"></a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cartsubhead">
+            <h1>Cart</h1>
+        </div>
+        <table id="carttable" style="width: 100%">
+            <tr>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Count</th>
+                <th>Item Price</th>
+                <th>Discount</th>
+                <th>Price</th>
+                <th>Cancel</th>
+            </tr>
+            <tr>
+                <td>White led Mug</td>
+                <td>Small</td>
+                <td>2</td>
+                <td>100,-</td>
+                <td></td>
+                <td>100,-</td>
+                <td><input id="cancel" type="submit" value="cancel" /></td>
+            </tr>
+            <tr>
+                <td>White led Mug</td>
+                <td>Medium</td>
+                <td>1</td>
+                <td>100,-</td>
+                <td>18%</td>
+                <td>82,-</td>
+                <td><input id="cancel" type="submit" value="cancel" /></td>
+            </tr>
+            <tr>
+                <td>White led Mug</td>
+                <td>Large</td>
+                <td>0</td>
+                <td>100,-</td>
+                <td></td>
+                <td>100,-</td>
+                <td><input id="cancel" type="submit" value="cancel" /></td>
+
+            </tr>
+        </table>
+        <div class="cartsubhead">
+            <h1>Checkout</h1>
+        </div>
+        <form class="cartform">
+            <fieldset class="details">
+                <legend>Details:</legend>
+                <label for="firstname">First name</label>
+                <input type="text" name="firstname" id="firstname" value="" size="20" />
+                <br />
+                <label for="lastname">Last name</label>
+                <input type="text" name="lastname" id="lastname" value="" size="20" />
+                <br />
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email" value="" size="20" />
+                <br />
+            </fieldset>
+            <fieldset class="Delivery">
+                <legend>Delivery adress:</legend>
+                <label for="street">Street</label>
+                <input type="street" name="street" id="street" value="" size="20" />
+                <br />
+                <label for="city">City</label>
+                <input type="city" name="city" id="city" value="" size="20" />
+                <br />
+                <label for="Postal Code">Postal Code</label>
+                <input type="Postal Code" name="Postal Code" id="Postal Code" value="" size="20" />
+                <br />
+            </fieldset>
+            <fieldset class="submitorder">
+                <legend>Submit order:</legend>
+
+                <div id="button">
+                    <input type="radio" name="accept" value="accepted" /> Accept terms of service
+                    <input id="addbutton" type="submit" value="submit" />
+
+                </div>
+            </fieldset>
+        </form>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </main>
+    <footer>
+        <p>phone email</p>
+    </footer>
+</body>

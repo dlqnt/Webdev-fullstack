@@ -1,0 +1,139 @@
+/* write CSS here */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQUwaEQbjB_mQ.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVQUwaEQbjA.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  } 
+
+body{
+    margin: 0px;
+    
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+h1, p, a{
+    font-family: verdana, sans-serif;
+    padding-left: 10px;
+}
+h2, h3{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+p, a{
+    font-size: 10px;
+}
+
+#header {
+    background-color: royalblue;
+    border-style: outset; color: lightblue;
+    border-width: 5px;
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#header > h1 {
+    font-family: verdana, sans-serif;
+    color:white;
+    text-shadow: 2px 2px #333;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+#header > h2 {
+    font-family: garamond, sans-serif;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px #333;
+    font-size: 1.2em;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#content > h2 {
+    border-bottom: 1px solid #999999;
+    
+}
+
+#content, #footer {
+    padding-left: 10px;
+}
+
+.rank {
+    background-color: black;
+    color: white;
+}
+
+.place>p{
+    text-align: justify;
+    text-indent: 2em;
+    color: #999999;
+}
+
+.place>p::first-line {
+    color: black;
+}
+
+.place>a{
+    color: blue
+}
+#footer{
+    background-color: black;
+}
+
+
+#calendar {
+    background-color: black;
+    color: white;
+
+}
+#calendar ul li{
+    list-style: circle;
+}
+#calendar ul li:nth-child(2){
+    font-weight:bold;
+}
+
+#calendar>h2{
+    font-family: open-sans, sans-serif;
+    padding-top: 5px;
+}
+#calendar ul li:nth-child(-n+2){
+    list-style-type: disc;
+
+}
+#calendar>ul li a:link{
+    text-decoration: none;
+    color: white
+}
+
+#calendar>ul li a:visited{
+    text-decoration: none;
+    color: white
+}
+
+
+#footer>p{
+    text-align: center;
+    color: yellow;
+    font-style: oblique;
+}
+
+
+  
